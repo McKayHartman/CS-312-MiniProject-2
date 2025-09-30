@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #FFECC0;
+  --primary-color: #FFC29B;
+  --secondary-color: #F39F9F;
+  --accent-color: #B95E82;
+}
+
+
+h1, h2 {
+  font-family: 'Lobster', cursive;
+}
+p, ul {
+  font-family: 'Pacifico', cursive;
+}
+
+
+
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+}
+
+
+
+
+
+button {
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: auto;
+}
+
+
+#container {
+  grid-template-columns: 1fr 1fr;
+}
+
+
+#recipe-ingredients {
+  margin-top: 20px;
+  border: solid;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+#cocktail-image {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#ingredients-list {
+  margin-bottom: 20px;
+}
+#directions {
+  margin-top: 20px;
+}
+
+#glass-type {
+  margin-top: 20px;
+}
+
+#glass-type p {
+  margin-top: 10px;
+}
+
+#directions p {
+  white-space: pre-wrap;
+}
+#directions h2 {
+  margin-bottom: 10px;
+}
+#ingredients-list h2 {
+  margin-bottom: 10px;
+}
+
+#ingredients-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+#ingredients-list li {
+  margin-bottom: 5px;
+}
+#ingredients-list li::marker {
+  color: #ff6347;
+}
